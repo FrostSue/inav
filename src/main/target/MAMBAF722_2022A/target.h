@@ -178,7 +178,7 @@
 #define TARGET_IO_PORTD                 (BIT(2))
 
 #define MAX_PWM_OUTPUT_PORTS            8
-#define TARGET_MOTOR_COUNT              8        
+#define TARGET_MOTOR_COUNT              8       
 
 // ESC-related features
 #define USE_DSHOT
@@ -186,12 +186,16 @@
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
 #define USE_RANGEFINDER
-#define RANGEFINDER_I2C_BUS         DEFAULT_I2C_BUS
-#define TEMPERATURE_I2C_BUS         DEFAULT_I2C_BUS
-#define PITOT_I2C_BUS               DEFAULT_I2C_BUS
+#define RANGEFINDER_I2C_BUS             DEFAULT_I2C_BUS
+#define TEMPERATURE_I2C_BUS             DEFAULT_I2C_BUS
+#define PITOT_I2C_BUS                   DEFAULT_I2C_BUS
 
 // *************** PINIO ***************************
 #define USE_PINIO
 #define USE_PINIOBOX
-#define PINIO1_PIN                  PC0   // VTX power switcher
-#define PINIO2_PIN                  PC2   // WiFi Switcher
+#define PINIO1_PIN                      PC0   // VTX power switcher
+#define PINIO2_PIN                      PC2   // WiFi Switcher
+#define PINIO1_INVERTED                 1
+#define PINIO2_INVERTED                 1
+#define PINIO1_FLAGS                    PINIO_FLAGS_INVERTED
+#define PINIO2_FLAGS                    PINIO_FLAGS_INVERTED
